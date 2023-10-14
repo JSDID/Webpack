@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400&display=swap");
+
+$dark: #000;
+$white: #fff;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  position: relative;
+  background-color: $white;
+  color: $dark;
+}
+
+.header {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+  }
+  .info {
+    &__title {
+      margin-top: 10rem;
+      margin-left: 2.5rem;
+    }
+    &__text {
+      margin-bottom: 6.25rem;
+      margin-left: 2.5rem;
+      width: 25rem;
+    }
+  }
+  .contact {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 0.625rem;
+      list-style: none;
+    }
+    &__link {
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
